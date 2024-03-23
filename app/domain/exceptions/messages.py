@@ -4,7 +4,7 @@ from domain.exceptions.base import ApplicationException
 
 
 @dataclass(eq=False)
-class TextTooLongException(ApplicationException):
+class TitleTooLongException(ApplicationException):
     text: str
 
     @property
@@ -13,7 +13,7 @@ class TextTooLongException(ApplicationException):
 
 
 @dataclass(eq=False)
-class EmptyTextError(ApplicationException):
+class EmptyTextException(ApplicationException):
     text: str
 
     @property
